@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Head of Ops, RevOps and Automation | Portfolio</title>
+<style>
+:root{--bg:#fafaf7;--ink:#1a1a1a;--quiet:#5b5b5b;--line:#d8d6cf;--accent:#c2410c;--card:#ffffff;--tint:#fdf0e8;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#161615;--ink:#f2f1ec;--quiet:#a8a69c;--line:#3a3935;--accent:#f08a4b;--card:#1f1e1c;--tint:#2a2219;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161615;--ink:#f2f1ec;--quiet:#a8a69c;--line:#3a3935;--accent:#f08a4b;--card:#1f1e1c;--tint:#2a2219;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+main{max-width:980px;margin:0 auto;padding:48px 20px 80px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 12px;letter-spacing:-0.02em}
+h2{font-size:22px;margin:56px 0 16px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.sub{color:var(--quiet);font-size:17px;max-width:720px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:28px 0 8px}
+.metric{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.metric b{display:block;font-size:26px;color:var(--accent)}
+.metric span{font-size:13px;color:var(--quiet)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 16px}
+.tabs button{font:inherit;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;min-height:40px}
+.tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;overflow-x:auto}
+.panel svg{width:100%;height:auto;min-width:560px;display:block}
+.panel p{margin:14px 0 0;font-size:15px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:14px 0}
+.case h3{margin:0 0 6px;font-size:18px}
+.case .tag{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.case p{margin:8px 0;font-size:15px}
+details summary{cursor:pointer;color:var(--accent);font-size:15px;margin-top:10px;min-height:32px}
+ul{padding-left:20px;margin:8px 0}
+li{margin:4px 0;font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card)}
+th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--quiet);font-weight:600}
+input[type=search]{width:100%;font:inherit;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);margin-bottom:12px;min-height:44px}
+.hidden{display:none}
+footer{margin-top:64px;color:var(--quiet);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Head of Operations, RevOps and Automation</h1>
+  <p class="sub">I build the systems that run a GTM team: CRM data quality, n8n automation, and LLM agents that replace manual ops work. Available as a fractional or embedded Head of Ops for B2B SaaS teams.</p>
+  <div class="metrics">
+    <div class="metric"><b>25</b><span>active production n8n workflows</span></div>
+    <div class="metric"><b>89</b><span>unused Salesforce fields removed, live org, no sandbox</span></div>
+    <div class="metric"><b>88%</b><span>of ~10k orphaned records removed via bulk operations</span></div>
+    <div class="metric"><b>7</b><span>deterministic checks in the pipeline agent</span></div>
+  </div>
+</header>
+
+<h2>How the workflows fit together</h2>
+<p class="sub">Select a flow to see how data moves through the system.</p>
+<div class="tabs" role="tablist" aria-label="Workflow diagrams">
+  <button role="tab" aria-selected="true" data-target="flow-agent">Pipeline confidence agent</button>
+  <button role="tab" aria-selected="false" data-target="flow-wf1">Meeting to opportunity</button>
+  <button role="tab" aria-selected="false" data-target="flow-gong">Call to CRM intelligence</button>
+  <button role="tab" aria-selected="false" data-target="flow-routing">Inbound routing</button>
+</div>
+
+<div class="panel" id="flow-agent">
+<svg viewBox="0 0 900 300" role="img" aria-label="Pipeline confidence agent flow">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--quiet)"/></marker></defs>
+  <g fill="var(--card)" stroke="var(--line)" stroke-width="1.5">
+    <rect x="20" y="110" width="150" height="70" rx="10"/><rect x="220" y="60" width="170" height="70" rx="10"/><rect x="220" y="170" width="170" height="70" rx="10"/><rect x="440" y="110" width="170" height="70" rx="10"/><rect x="660" y="60" width="220" height="70" rx="10" stroke="var(--accent)" stroke-width="2"/><rect x="660" y="170" width="220" height="70" rx="10"/>
+  </g>
+  <g fill="var(--ink)" font-size="14" text-anchor="middle">
+    <text x="95" y="140" font-weight="600">Weekday schedule</text><text x="95" y="162" font-size="12" fill="var(--quiet)">7:30 trigger</text>
+    <text x="305" y="92" font-weight="600">Salesforce read</text><text x="305" y="114" font-size="12" fill="var(--quiet)">open NB opps + past meetings</text>
+    <text x="305" y="202" font-weight="600">Deterministic checks</text><text x="305" y="224" font-size="12" fill="var(--quiet)">7 rules in code, no LLM</text>
+    <text x="525" y="140" font-weight="600">Scoring</text><text x="525" y="162" font-size="12" fill="var(--quiet)">completeness, activity, value-weighted</text>
+    <text x="770" y="92" font-weight="600">Slack summary</text><text x="770" y="114" font-size="12" fill="var(--quiet)">team view</text>
+    <text x="770" y="202" font-weight="600">LLM drafts messages</text><text x="770" y="224" font-size="12" fill="var(--quiet)">language only, per owner</text>
+  </g>
+  <g stroke="var(--quiet)" stroke-width="1.5" fill="none" marker-end="url(#a)">
+    <path d="M170 145H218"/><path d="M220 95H170"/><path d="M170 145L218 205"/><path d="M390 205L438 150"/><path d="M390 95L438 135"/><path d="M610 145L658 95"/><path d="M610 150L658 200"/>
+  </g>
+</svg>
+<p>Counting, grouping, and owner attribution run in code. The LLM only writes the message text, after a validation pass against live Salesforce data.</p>
+</div>
+
+<div class="panel hidden" id="flow-wf1">
+<svg viewBox="0 0 900 260" role="img" aria-label="Meeting to opportunity flow">
+  <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--quiet)"/></marker></defs>
+  <g fill="var(--card)" stroke="var(--line)" stroke-width="1.5">
+    <rect x="20" y="100" width="150" height="66" rx="10"/><rect x="220" y="100" width="170" height="66" rx="10"/><rect x="440" y="60" width="180" height="66" rx="10"/><rect x="440" y="150" width="180" height="66" rx="10"/><rect x="670" y="100" width="210" height="66" rx="10" stroke="var(--accent)" stroke-width="2"/>
+  </g>
+  <g fill="var(--ink)" font-size="14" text-anchor="middle">
+    <text x="95" y="128" font-weight="600">Meeting booked</text><text x="95" y="148" font-size="12" fill="var(--quiet)">event created</text>
+    <text x="305" y="128" font-weight="600">Owner match</text><text x="305" y="148" font-size="12" fill="var(--quiet)">fuzzy AE matching</text>
+    <text x="530" y="88" font-weight="600">Duplicate guard</text><text x="530" y="108" font-size="12" fill="var(--quiet)">soft-deleted and active checks</text>
+    <text x="530" y="178" font-weight="600">Fallback owner</text><text x="530" y="198" font-size="12" fill="var(--quiet)">Slack alert with fix link</text>
+    <text x="775" y="128" font-weight="600">Opportunity created</text><text x="775" y="148" font-size="12" fill="var(--quiet)">idempotency key written</text>
+  </g>
+  <g stroke="var(--quiet)" stroke-width="1.5" fill="none" marker-end="url(#b)">
+    <path d="M170 133H218"/><path d="M390 128L438 96"/><path d="M390 138L438 176"/><path d="M620 92L668 124"/><path d="M620 182L668 150"/>
+  </g>
+</svg>
+<p>The duplicate guard and idempotency key stop the deletion-and-recreation loop. Both branches end in an opportunity, so no meeting goes unrecorded.</p>
+</div>
+
+<div class="panel hidden" id="flow-gong">
+<svg viewBox="0 0 900 260" role="img" aria-label="Gong call to CRM intelligence flow">
+  <defs><marker id="c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--quiet)"/></marker></defs>
+  <g fill="var(--card)" stroke="var(--line)" stroke-width="1.5">
+    <rect x="20" y="100" width="150" height="66" rx="10"/><rect x="220" y="100" width="170" height="66" rx="10"/><rect x="440" y="60" width="180" height="66" rx="10"/><rect x="440" y="150" width="180" height="66" rx="10"/><rect x="670" y="60" width="210" height="66" rx="10" stroke="var(--accent)" stroke-width="2"/><rect x="670" y="150" width="210" height="66" rx="10"/>
+  </g>
+  <g fill="var(--ink)" font-size="14" text-anchor="middle">
+    <text x="95" y="128" font-weight="600">Gong call processed</text><text x="95" y="148" font-size="12" fill="var(--quiet)">transcript ready</text>
+    <text x="305" y="128" font-weight="600">LLM extraction</text><text x="305" y="148" font-size="12" fill="var(--quiet)">structured output</text>
+    <text x="530" y="88" font-weight="600">MEDDPICC fields</text><text x="530" y="108" font-size="12" fill="var(--quiet)">about 28 fields on opportunity</text>
+    <text x="530" y="178" font-weight="600">Competitive intel</text><text x="530" y="198" font-size="12" fill="var(--quiet)">child object, reportable</text>
+    <text x="775" y="88" font-weight="600">Opportunity updated</text><text x="775" y="108" font-size="12" fill="var(--quiet)">existing path unchanged</text>
+    <text x="775" y="178" font-weight="600">AE follow-up draft</text><text x="775" y="198" font-size="12" fill="var(--quiet)">email for review</text>
+  </g>
+  <g stroke="var(--quiet)" stroke-width="1.5" fill="none" marker-end="url(#c)">
+    <path d="M170 133H218"/><path d="M390 128L438 96"/><path d="M390 138L438 176"/><path d="M620 92L668 92"/><path d="M620 182L668 182"/>
+  </g>
+</svg>
+<p>The new competitive-intelligence branch runs in parallel. The production update was never edited, which is why it could ship with no risk to existing fields.</p>
+</div>
+
+<div class="panel hidden" id="flow-routing">
+<svg viewBox="0 0 900 260" role="img" aria-label="Inbound lead routing flow">
+  <defs><marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--quiet)"/></marker></defs>
+  <g fill="var(--card)" stroke="var(--line)" stroke-width="1.5">
+    <rect x="20" y="100" width="150" height="66" rx="10"/><rect x="200" y="100" width="150" height="66" rx="10"/><rect x="380" y="100" width="150" height="66" rx="10"/><rect x="560" y="60" width="150" height="50" rx="10"/><rect x="560" y="122" width="150" height="50" rx="10"/><rect x="560" y="184" width="150" height="50" rx="10"/><rect x="740" y="100" width="140" height="66" rx="10" stroke="var(--accent)" stroke-width="2"/>
+  </g>
+  <g fill="var(--ink)" font-size="14" text-anchor="middle">
+    <text x="95" y="128" font-weight="600">New lead</text><text x="95" y="148" font-size="12" fill="var(--quiet)">polled each minute</text>
+    <text x="275" y="128" font-weight="600">Normalize</text><text x="275" y="148" font-size="12" fill="var(--quiet)">re-fetch full record</text>
+    <text x="455" y="128" font-weight="600">Filter</text><text x="455" y="148" font-size="12" fill="var(--quiet)">skip noise and personal email</text>
+    <text x="635" y="90" font-size="13" font-weight="600">Region A owner</text>
+    <text x="635" y="152" font-size="13" font-weight="600">Region B owner</text>
+    <text x="635" y="214" font-size="13" font-weight="600">Other</text>
+    <text x="810" y="128" font-weight="600">Team alert</text><text x="810" y="148" font-size="12" fill="var(--quiet)">channel per region</text>
+  </g>
+  <g stroke="var(--quiet)" stroke-width="1.5" fill="none" marker-end="url(#d)">
+    <path d="M170 133H198"/><path d="M350 133H378"/><path d="M530 120L558 90"/><path d="M530 133H558"/><path d="M530 146L558 208"/><path d="M710 85L738 118"/><path d="M710 147L738 135"/><path d="M710 209L738 150"/>
+  </g>
+</svg>
+<p>Each branch ends in a team alert.</p>
+</div>
+
+<h2>Featured case studies</h2>
+<div class="tabs" role="tablist" aria-label="Filter case studies">
+  <button role="tab" aria-selected="true" data-filter="all">All</button>
+  <button role="tab" aria-selected="false" data-filter="ai">AI and LLM</button>
+  <button role="tab" aria-selected="false" data-filter="revops">RevOps and data</button>
+  <button role="tab" aria-selected="false" data-filter="automation">Automation</button>
+</div>
+
+<div class="case" data-cat="ai automation">
+  <div class="tag">AI and LLM · Automation</div>
+  <h3>AI Pipeline Confidence Agent</h3>
+  <p><strong>Problem:</strong> No measure of how reliable the open pipeline was. Hygiene reviews were manual.</p>
+  <p><strong>Result:</strong> A read-only agent runs each weekday. It scores completeness, activity, and value-weighted confidence, then posts a team summary and per-owner messages to Slack. Baseline: 55% of open opportunities pass all checks, 85% field completeness, 68% with logged activity. Re-measurement scheduled at 30 days.</p>
+  <details><summary>Key decision and stack</summary>
+    <ul>
+      <li>During validation the LLM miscounted records and assigned opportunities to the wrong owners. I moved counting and attribution into deterministic code and kept the LLM for drafting only.</li>
+      <li>Every figure was checked against live Salesforce queries before sending.</li>
+      <li>Slack write-back bot: unique-match check, value validation, user allowlist, dry-run by default.</li>
+      <li>Stack: n8n, Salesforce SOQL, LLM API, Slack API.</li>
+    </ul>
+  </details>
+</div>
+
+<div class="case" data-cat="automation revops">
+  <div class="tag">Automation · Salesforce</div>
+  <h3>Meeting to Opportunity (WF1)</h3>
+  <p><strong>Problem:</strong> Booked meetings did not reliably create opportunities, and recreating deleted records caused duplicate loops.</p>
+  <p><strong>Result:</strong> Fuzzy owner matching, a duplicate guard, idempotency keys, and a fallback owner alert. The deletion-and-recreation loop is fixed.</p>
+  <details><summary>Details</summary>
+    <ul>
+      <li>Idempotency check now also finds soft-deleted records in the recycle bin.</li>
+      <li>Alerts instead of creating a second opportunity when an active one exists.</li>
+    </ul>
+  </details>
+</div>
+
+<div class="case" data-cat="automation revops">
+  <div class="tag">Automation · Routing</div>
+  <h3>Real-Time Inbound Lead Routing</h3>
+  <p><strong>Problem:</strong> Inbound leads were routed by hand, with delays and inconsistent ownership.</p>
+  <p><strong>Result:</strong> Polling trigger, normalization, filtering, regional reassignment, and team alerts. Debugging found a silent-drop branch and a PATCH response that overwrote lead data; both are fixed.</p>
+</div>
+
+<div class="case" data-cat="ai revops">
+  <div class="tag">AI and LLM · Salesforce</div>
+  <h3>Gong to Salesforce Discovery Intelligence</h3>
+  <p><strong>Problem:</strong> Call insights never reached CRM fields, so deal reviews relied on memory.</p>
+  <p><strong>Result:</strong> An LLM extracts about 28 MEDDPICC fields into the opportunity and drafts an AE follow-up. A parallel branch writes competitive data to a reportable child object, tested end-to-end on a live call without touching the production update.</p>
+</div>
+
+<div class="case" data-cat="revops">
+  <div class="tag">RevOps · Data quality</div>
+  <h3>Salesforce Data Quality and Structural Cleanup</h3>
+  <p><strong>Problem:</strong> Years of fields, flows, and automations caused errors, with no usable sandbox.</p>
+  <p><strong>Result:</strong> 89 unused fields removed across five objects in two production deployments. The 39 blocked fields each have a documented blocker. Three reports from one day traced to one dirty-value bug, fixed at the source with a restricted picklist.</p>
+  <details><summary>More</summary>
+    <ul>
+      <li>Cloned, edited, tested, and activated a process version live in production, then retired the old versions that blocked field deletion.</li>
+      <li>About 10,000 orphaned tasks from a scheduled managed-package job: job stopped, full ID snapshot taken, 88% deleted in batches. The rest were documented rather than backfilled.</li>
+    </ul>
+  </details>
+</div>
+
+<div class="case" data-cat="revops automation">
+  <div class="tag">RevOps · HubSpot</div>
+  <h3>Inbound Scoring and Qualification</h3>
+  <p><strong>Problem:</strong> Six weeks with zero MQLs, traced to a misrouted workflow property.</p>
+  <p><strong>Result:</strong> Diagnosed, recalibrated, and reactivated the scoring model. Added automatic disqualification with a stored reason. Auto-MQL infrastructure built with a dry-run list and held until calibration was validated.</p>
+</div>
+
+<div class="case" data-cat="automation revops">
+  <div class="tag">Automation · Reporting</div>
+  <h3>Automated GTM Reporting</h3>
+  <p><strong>Problem:</strong> Weekly and monthly pipeline decks took hours of manual work.</p>
+  <p><strong>Result:</strong> Workflows pull Salesforce data and generate decks in Google Drive with template folders, automatic naming, and verification before release.</p>
+</div>
+
+<h2>Automation catalog</h2>
+<input type="search" id="search" placeholder="Filter by trigger, tool, or purpose" aria-label="Filter workflows">
+<table>
+  <thead><tr><th>Workflow</th><th>Trigger</th><th>What it does</th></tr></thead>
+  <tbody id="catalog">
+    <tr><td>Meeting booked to opportunity (WF1)</td><td>Event created</td><td>Deduplicated opportunity, owner matching, fallback alerts</td></tr>
+    <tr><td>Prospect folder and deck (WF2)</td><td>Opportunity stage</td><td>Drive folder and deck from templates</td></tr>
+    <tr><td>Inbound lead routing</td><td>Lead created (polling)</td><td>Filter, normalize, reassign by region, alert teams</td></tr>
+    <tr><td>Gong MEDDPICC extraction</td><td>Gong call processed</td><td>LLM extracts about 28 fields, drafts AE follow-up</td></tr>
+    <tr><td>Competitive intel extraction</td><td>Gong call processed</td><td>Competitor data to a reportable child object</td></tr>
+    <tr><td>CS meeting summary emails</td><td>Fireflies webhook</td><td>Retry loop for transcript readiness, internal and draft emails</td></tr>
+    <tr><td>Fireflies to Salesforce transcript</td><td>Fireflies webhook</td><td>LLM client extraction, account matching, linked notes</td></tr>
+    <tr><td>Call analysis email</td><td>Post-discovery</td><td>Structured analysis to owner and manager</td></tr>
+    <tr><td>Pipeline confidence agent</td><td>Weekday schedule</td><td>Deterministic checks, scoring, Slack summary</td></tr>
+    <tr><td>Pipeline Slack bot</td><td>Slack command</td><td>Validated, allowlisted write-back to opportunities</td></tr>
+    <tr><td>Weekly intelligence report</td><td>Weekly schedule</td><td>Data quality analysis with ranked actions</td></tr>
+    <tr><td>Weekly digest</td><td>Monday schedule</td><td>Deals advanced, stalled, closing this month</td></tr>
+    <tr><td>Stalled-deal detection</td><td>Weekday schedule</td><td>Creates follow-up tasks</td></tr>
+    <tr><td>Audience sync</td><td>Monthly schedule</td><td>Filtered contacts to Sheets for ad audience</td></tr>
+    <tr><td>Referral alerts</td><td>Slack trigger and schedule</td><td>Go-live capture, 90-day reminders</td></tr>
+    <tr><td>Closed Won notification</td><td>Opportunity stage</td><td>Team alert, CC handling tested</td></tr>
+    <tr><td>Accounting sync</td><td>Salesforce event</td><td>One-way invoice push for tax compliance</td></tr>
+  </tbody>
+</table>
+
+<footer>Figures are measured baselines unless noted. Client names and internal values omitted.</footer>
+</main>
+
+<script>
+const tabs=document.querySelectorAll('.tabs button[data-target]');
+tabs.forEach(b=>b.addEventListener('click',()=>{
+  tabs.forEach(t=>t.setAttribute('aria-selected','false'));
+  b.setAttribute('aria-selected','true');
+  document.querySelectorAll('.panel').forEach(p=>p.classList.add('hidden'));
+  document.getElementById(b.dataset.target).classList.remove('hidden');
+}));
+const filters=document.querySelectorAll('.tabs button[data-filter]');
+filters.forEach(b=>b.addEventListener('click',()=>{
+  filters.forEach(t=>t.setAttribute('aria-selected','false'));
+  b.setAttribute('aria-selected','true');
+  const f=b.dataset.filter;
+  document.querySelectorAll('.case').forEach(c=>{
+    c.classList.toggle('hidden', f!=='all' && !c.dataset.cat.split(' ').includes(f));
+  });
+}));
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{
+  const q=search.value.toLowerCase();
+  document.querySelectorAll('#catalog tr').forEach(r=>{
+    r.classList.toggle('hidden', !r.textContent.toLowerCase().includes(q));
+  });
+});
+</script>
+</body>
+</html>
